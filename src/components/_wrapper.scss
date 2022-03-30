@@ -2,6 +2,13 @@
  * Chart wrapper element
  */
 .charts-css {
+
+  // Reset any previous style
+  all: initial !important;
+  * {
+    all: unset !important;
+  }
+
   // Colors
   @each $index, $color in $colors {
     --#{ $variable-prefix }color-#{ $index }: #{ $color };
